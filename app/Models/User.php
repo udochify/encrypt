@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\Crypto\Rsa\KeyPair;
+use Spatie\Crypto\Rsa\PrivateKey;
+use Spatie\Crypto\Rsa\PublicKey;
 
 class User extends Authenticatable
 {
@@ -42,4 +45,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public static function generateRSAKeys()
+    {
+        $pathToPrivateKey = 'keys/'.auth()->user()->name.'_'.auth()->user()->id.'/'.'rsa_pri.pem';
+        $pathToPublicKey = 'keys/'.auth()->user()->name.'_'.auth()->user()->id.'/'.'rsa_bub.pem';
+        (new KeyPair())->generate($pathToPrivateKey, $pathToPublicKey);
+    }
 }
