@@ -130,7 +130,7 @@ class FileController extends Controller
         }
         
         try {
-            // load rsa private key from uploaded rsa file
+            // load rsa public key from uploaded rsa file
             $publicKey = PublicKey::fromFile($_FILES['rsa_pub_file']['tmp_name']);
     
             // decrypt aes key with rsa private key
