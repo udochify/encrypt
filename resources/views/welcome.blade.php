@@ -41,10 +41,10 @@
                     </div>
                     <div class="flex flex-col w-96 px-10">
                         <div class="">
-                            <p class="font-bold font-serif text-6xl">Secure Share Desk - SSD</p>
+                            <p class="font-bold font-serif text-6xl">Hybrid File Encryption System</p>
                         </div>
                         <div class="mt-8">
-                            <p>Our application enable users share files among each other using advanced implementation of both Symmentric (AES) and Assymmentric (RSA) Encryption Algorithms.</p>
+                            <p>Our application enable users to store their files on a server using advanced implementation of both Symmentric (AES) and Assymmentric (RSA) Encryption Algorithms.</p>
                         </div>
                     </div>
                 </div>
