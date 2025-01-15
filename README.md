@@ -1,2 +1,2 @@
 # encrypt
-Front Encryption app employing both AES and RSA encryption algorithm
+Laravel based Encryption app employing both AES and RSA encryption algorithm
