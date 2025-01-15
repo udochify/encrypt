@@ -34,12 +34,12 @@
             @endif
             </div>
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex flex-row">
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8 mt-12">
+                <div class="flex flex-col sm:flex-row">
                     <div class="w-[500px] mr-5">
                         <img class="relative w-full h-auto" src="img/logo-file-sharing.jpg" />
                     </div>
-                    <div class="flex flex-col w-96">
+                    <div class="flex flex-col w-96 px-10">
                         <div class="">
                             <p class="font-bold font-serif text-6xl">Secure Share Desk - SSD</p>
                         </div>

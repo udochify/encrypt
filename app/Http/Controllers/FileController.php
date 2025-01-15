@@ -120,7 +120,7 @@ class FileController extends Controller
             ['rsa_pub_file' => ['required', new CustomFileRule(['pem']), 'max:1024'],],
             [
                 'rsa_pub_file.required' => 'RSA file is required',
-                'rsa_pub_file.required' => 'RSA file size must be less than 1MB',
+                'rsa_pub_file.max' => 'RSA file size must be less than 1MB',
             ]
         );
 
